@@ -58,16 +58,16 @@ const data = {
       isActive: true,
       items: [
         {
-          title: "History",
-          url: "#",
+          title: "TRPC",
+          url: "/dashboard/trpc",
         },
         {
-          title: "Starred",
-          url: "#",
+          title: "Polar",
+          url: "/dashboard/polar",
         },
         {
-          title: "Settings",
-          url: "#",
+          title: "Upgrade",
+          url: "/dashboard/upgrade",
         },
       ],
     },

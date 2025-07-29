@@ -9,7 +9,7 @@ const globalForPrisma = global as unknown as {
 
 const prismaClientSingleton = () => {
   if (process.env.NODE_ENV !== "production") {
-    const connectionString = `${process.env.DATABASE_URL}`;
+    const connectionString = process.env.DATABASE_URL!;
     const adapter = new PrismaPg({ connectionString });
     return new PrismaClient({ adapter }).$extends(withAccelerate());
   } else {
